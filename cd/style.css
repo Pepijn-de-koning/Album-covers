@@ -2,6 +2,7 @@
   padding: 0px;
   margin: 0px;
   font-family: 'Odibee Sans', cursive;
+  list-style: none;
 }
 
 .cover {
@@ -21,26 +22,28 @@
   color: white;
 }
 
+ol {
+    text-shadow: 0 0 6px black;
+}
+
 .album-text {
   position: absolute;
   top: 50%;
   left: 50%;
   opacity: 0;
   transform: translate(-50%, -50%);
+  transition: opacity 600ms;
+  text-shadow: 0 0 3px black;
 }
 
-.album-text:hover {
-  position: absolute;
-  top: 50%;
-  left: 50%;
+section:hover .album-text {
   opacity: 1;
-  transform: translate(-50%, -50%);
 }
 
-.container img:hover{
-  -webkit-transition: all 300ms ease-in-out;
-  -o-transition: all 300ms ease-in-out;
-  transition: all 300ms ease-in-out;
+section:hover img{
+  -webkit-transition: all 400ms ease-in-out;
+  -o-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
   -webkit-filter: blur(1px);
   -moz-filter: blur(1px);
   -ms-filter: blur(1px);
